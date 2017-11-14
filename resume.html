@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--设置字符集-->
+    <!--设置视口，用于手机浏览-->
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <!--兼容IE浏览器-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入reset.css 清除元素默认效果-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!--引入bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--引入jquery-->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!--引入为了兼容低版本ie的json-->
+    <script type="text/javascript" src="js/json2.js"></script>
+    <!--引入jquery操作cookie-->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <!--引入jquery鼠标滚动支持-->
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+    <!--添加动画支持颜色-->
+    <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+
+    <!--引入bootstrap相关-->
+    <!--引入bootstrap js-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!--引入heightchart-->
+    <!-- <script type="text/javascript" src="js/yourjs.js"></script> -->
+
+    <!--网页的标题-->
+    <title>template</title>
+    <style>
+        .logo{width:200px;height:40px;}
+        h3 {border-bottom:2px solid orange;
+            display: inline-block;
+            color: grey;}
+        .pic{width: 365px;height: 270px;}
+
+        h1{ text-align: center}
+    </style><!--页内的css-->
+    <script>
+        //页内的js
+        $(function () {  //js ready
+
+        });
+    </script>
+</head>
+<body>
+<a href="index.html">回首页</a>
+<h1>个人简历书写中。。。 才开始而已</h1>
+<h1>个人简历</h1>
+<div>
+    <h3>基本信息</h3>
+    <ul>
+        <li>姓名：郁挚一</li>
+        <li>性别：男</li>
+        <li>居住地：上海 浦东</li>
+        <li>学历：本科</li>
+        <li>专业：计算机科学与技术</li>
+        <li>学位：学士学位</li>
+    </ul>
+</div>
+<div>
+    <h3 >工作经历</h3>
+    <ul>
+        <img class="logo" src="images/logo/logo.svg" alt="">
+        <h4>上海美滋数字科技有限公司（天天果园）2016/7 - 2017/7</h4>
+        <li>职位：资深系统运维工程师</li>
+    </ul>
+    <ul><img class="logo" src="images/logo/wlogo.png" alt="">
+        <h4>我厨（上海）科技有限公司 2015/1 -2016/6</h4>
+        <li>职位：系统运维高级工程师</li>
+    </ul>
+    <ul><img class="logo" src="images/logo/boya.jpg" alt="">
+        <h4>博雅软件股份有限公司： 2013/1-2015/1 </h4>
+        <li>职位：系统工程师</li>
+    </ul>
+</div>
+
+<div>
+    <p>通过对AWS上的生产环境Mysql数据库进行索引优化，取消隐式转换，使用程序进行归档等手段</p>
+    <p>在两周内有效降低的数据库的CPU及IO使用</p>
+    <img class="pic" src="images/rds-01.jpg" alt="">
+    <img class="pic" src="images/rds-02.jpg" alt="">
+</div>
+
+<div>
+    <p>搭建VMware虚拟环境，整合多台服务器，存储设备，提高了资源利用率，实现了高可用，</p>
+    <p>在线迁移功能，提高了系统的灵活性</p>
+    <img class="pic" src="images/vcenter-1.png" alt="">
+</div>
+<div>
+    <p>使用zabbix监控对系统的各个资源实现全面监控</p>
+    <p>当指标达到阈值时，自动发送告警邮件，或调用公司的短信接口发送短信通知</p>
+    <img class="pic" src="images/zabbix-dashboard.png" alt="">
+    <img class="pic" src="images/zabbix-detail.png" alt="">
+</div>
+</body>
+</html>

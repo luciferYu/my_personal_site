@@ -2,3 +2,16 @@
     height: 250px;
     width: 300px;
 }
+
+.navbar{
+    margin-bottom: 0!important;
+}
+.jumbotron{
+    background: url("../images/background.jpg") center center no-repeat;
+    background-size:cover;
+    height: auto;
+
+}
+.jumbotron #jh1,#jp {
+    color: #fff;
+}
