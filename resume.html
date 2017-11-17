@@ -84,21 +84,29 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title">
-                <span class="glyphicon glyphicon-user"></span>
-                个人基本信息
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                    <span class="glyphicon glyphicon-user"></span>
+                    个人基本信息
+                </a>
+
             </h2>
         </div>
-        <div class="panel-body">
-            <div class="pull-left">
-                <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 上海市 浦东新区</div>
-                <br>
-                <div><span class="glyphicon glyphicon-envelope"></span> 81784779@qq.com</div>
-                <br>
-                <p><i class="icon-link"></i> 81784779</p><br>
-                <p><i class="icon-github"></i> https://github.com/luciferYu</p><br>
-            </div>
-            <div class="pull-right">
-                <img  src="images/idphoto.jpg" class="img-rounded img-responsive" alt="证件照">
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div class="pull-left">
+                    <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 上海市 浦东新区</div>
+                    <br>
+                    <div><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:81784779@qq.com">81784779@qq.com</a>
+                    </div>
+                    <br>
+                    <p><i class="icon-link"></i> 81784779</p><br>
+                    <p><i class="icon-github"></i> <a
+                            href="https://github.com/luciferYu">https://github.com/luciferYu</a></p><br>
+                </div>
+                <div class="pull-right">
+                    <img src="images/idphoto.jpg" class="img-rounded img-responsive" alt="证件照">
+                </div>
             </div>
         </div>
     </div>
@@ -110,12 +118,77 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title">
-                <i class="icon-cog"></i>
-                技能简介
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseTwo">
+                    <i class="icon-cog"></i>
+                    技能简介
+                </a>
             </h2>
         </div>
-        <div class="panel-body">
-            面板内容
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <td>后端开发：</td>
+                        <td>熟悉Python语言，熟悉Django web MTV框架 Scrapy 爬虫框架，</td>
+                    </tr>
+                    <tr>
+                        <td>前端开发：</td>
+                        <td>熟悉 HTML，CSS，JS 熟悉JQuery框架，了解Bootstrap框架</td>
+                    </tr>
+                    <tr>
+                        <td>数据库：</td>
+                        <td>熟悉 关系型：Mysql 了解Mssql，sqllite
+                            <br> 熟悉 kv型：redis、memcache
+                            <br> 熟悉 文档型：monogo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Web服务器:</td>
+                        <td>熟悉 Nginx，IIS服务器 了解Apache httpd</td>
+                    </tr>
+                    <tr>
+                        <td>应用服务器:</td>
+                        <td>熟悉 tomcat 了解jvm虚拟机，了解maven</td>
+                    </tr>
+                    <tr>
+                        <td>中间件：</td>
+                        <td>熟悉rabbitMQ中间件</td>
+                    </tr>
+                    <tr>
+                        <td>云平台：</td>
+                        <td>熟悉 AWS云，阿里云。了解Azure，京东云。</td>
+                    </tr>
+                    <tr>
+                        <td>系统：</td>
+                        <td>熟悉Linux系统、熟悉windows系统</td>
+                    </tr>
+                    <tr>
+                        <td>网络：</td>
+                        <td>熟悉HTTP协议、了解TCP/IP协议</td>
+                    </tr>
+                    <tr>
+                        <td>版本控制：</td>
+                        <td>熟悉 git、gitlab、github</td>
+                    </tr>
+                    <tr>
+                        <td>虚拟化：</td>
+                        <td>熟悉vmware vsphere 企业级虚拟化、熟悉KVM。了解Docker容器</td>
+                    </tr>
+                    <tr>
+                        <td>硬件：</td>
+                        <td>熟悉x86服务器，熟悉SAN磁盘存储，了解NAS存储</td>
+                    </tr>
+                    <tr>
+                        <td>管理技能：</td>
+                        <td>熟悉项目管理</td>
+                    </tr>
+                    <tr>
+                        <td>其他技能:</td>
+                        <td>熟悉photoshop，ms office，Visio</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -125,12 +198,17 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title">
-                <i class="icon-laptop"></i>
-                工作履历
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseThree">
+                    <i class="icon-laptop"></i>
+                    工作履历
+                </a>
             </h2>
         </div>
-        <div class="panel-body">
-            面板内容
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                面板内容
+            </div>
         </div>
     </div>
 </div>
@@ -140,12 +218,17 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title">
-                <i class="icon-book"></i>
-                教育经历
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseFour">
+                    <i class="icon-book"></i>
+                    教育经历
+                </a>
             </h2>
         </div>
-        <div class="panel-body">
-            面板内容
+        <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+                面板内容
+            </div>
         </div>
     </div>
 </div>
@@ -155,12 +238,63 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title">
-                <i class="icon-certificate"></i>
-                证书
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseFive">
+                    <i class="icon-certificate"></i>
+                    证书
+                </a>
             </h2>
         </div>
-        <div class="panel-body">
-            面板内容
+        <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>证书名称</th>
+                        <th>证书等级</th>
+                        <th>办法机构</th>
+                        <th>日期</th>
+                    </tr> </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#modalbigdata" data-toggle="modal">IBM Big Data Fundamentals Technical Professional v1</a></td>
+                        <td>初级</td>
+                        <td>IBM</td>
+                        <td>2013/5</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modalnetwork" data-toggle="modal">网络工程师</a></td>
+                        <td>中级</td>
+                        <td>工信部</td>
+                        <td>2013/5	</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modalvcp" data-toggle="modal">VCP 5.0</a></td>
+                        <td>中级</td>
+                        <td>VMware</td>
+                        <td>2012/09</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modaldzswsjs" data-toggle="modal">电子商务设计师</a></td>
+                        <td>中级</td>
+                        <td>工信部</td>
+                        <td>2011/11</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modalxxxtxmgl" data-toggle="modal">信息系统项目管理师</a></td>
+                        <td>高级</td>
+                        <td>工信部</td>
+                        <td>2011/06</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modalxtjc" data-toggle="modal">系统集成项目管理工程师</a></td>
+                        <td>中级</td>
+                        <td>工信部</td>
+                        <td>2010/11</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -169,15 +303,206 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title">
-                <i class="icon-trophy"> </i>
-                荣誉
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseSix">
+                    <i class="icon-trophy"> </i>
+                    荣誉
+                </a>
             </h2>
         </div>
-        <div class="panel-body">
-            面板内容
+        <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><a href="#modalcxyj" data-toggle="modal">上海开放大学创新研究项目一等奖</a></td>
+                        <td>2014</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modalyxxy" data-toggle="modal">上海开放大学优秀学员</a></td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modaljcgx" data-toggle="modal">上海申铁信息工程有限公司杰出贡献奖</a></td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#modalstyxyg"  data-toggle="modal">上海申铁信息工程有限公司优秀员工</a></td>
+                        <td>2007</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+
+<!--以下放置模态框-->
+
+<!--证书模态框-->
+<!-- bigdata模态框（Modal） -->
+<div class="modal fade" id="modalbigdata" tabindex="-1" role="dialog" aria-labelledby="ModalLabelbigdata" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelbigdata">IBM Big Data Fundamentals Technical Professional v1</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/cert/bigdata.png" alt="大数据初级"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 网络工程师模态框（Modal） -->
+<div class="modal fade" id="modalnetwork" tabindex="-1" role="dialog" aria-labelledby="ModalLabelnetwork" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelnetwork">网络工程师</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/cert/网络工程师.jpg" alt="网络工程师"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 标题模态框（Modal） -->
+<div class="modal fade" id="modalvcp" tabindex="-1" role="dialog" aria-labelledby="ModalLabelvcp" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelvcp">VCP</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/cert/VCP.jpg" alt="vcp"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 电子商务设计师模态框（Modal） -->
+<div class="modal fade" id="modaldzswsjs" tabindex="-1" role="dialog" aria-labelledby="ModalLabeldzswsjs" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabeldzswsjs">电子商务设计师</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/cert/电子商务设计师.jpg" alt="电子商务设计师"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 信息系统项目管理师模态框（Modal） -->
+<div class="modal fade" id="modalxxxtxmgl" tabindex="-1" role="dialog" aria-labelledby="ModalLabelxxxtxmgl" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelxxxtxmgl">信息系统项目管理师</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/cert/信息系统项目管理师.jpg" alt="信息系统项目管理师"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 系统集成项目管理师模态框（Modal） -->
+<div class="modal fade" id="modalxtjc" tabindex="-1" role="dialog" aria-labelledby="ModalLabelxtjc" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelxtjc">系统集成项目管理师</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/cert/系统集成项目管理师.jpg" alt="系统集成项目管理师"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+<!--荣誉模态框-->
+<!-- 上海开放大学创新研究项目一等奖模态框（Modal） -->
+<div class="modal fade" id="modalcxyj" tabindex="-1" role="dialog" aria-labelledby="ModalLabelcxyj" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelcxyj">上海开放大学创新研究项目一等奖</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/honor/上海开发大学学生创新研究项目一等奖.jpg" alt="上海开发大学学生创新研究项目一等奖"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 上海开放大学优秀学员模态框（Modal） -->
+<div class="modal fade" id="modalyxxy" tabindex="-1" role="dialog" aria-labelledby="ModalLabelyxxy" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelyxxy">上海开放大学优秀学员</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/honor/上海开放大学优秀学员.jpg" alt="上海开放大学优秀学员"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+<!-- 上海申铁信息工程有限公司优秀员工模态框（Modal） -->
+<div class="modal fade" id="modalstyxyg" tabindex="-1" role="dialog" aria-labelledby="ModalLabelstyxyg" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabelstyxyg">上海申铁信息工程有限公司优秀员工</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive"  src="images/honor/上海申铁信息工程有限公司优秀员工.jpg" alt="上海申铁信息工程有限公司优秀员工"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 上海申铁信息工程有限公司杰出贡献奖模态框（Modal） -->
+<div class="modal fade" id="modaljcgx" tabindex="-1" role="dialog" aria-labelledby="ModalLabeljcgx" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="ModalLabeljcgx">上海申铁信息工程有限公司杰出贡献</h4>
+            </div>
+            <div class="modal-body text-center"><img class="img-responsive" src="images/honor/上海申铁信息工程有限公司杰出贡献奖.jpg" alt="上海申铁信息工程有限公司杰出贡献奖.JPG"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+
 
 </body>
 </html>
