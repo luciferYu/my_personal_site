@@ -35,7 +35,7 @@
     <!-- <script type="text/javascript" src="js/yourjs.js"></script> -->
 
     <!--网页的标题-->
-    <title>template</title>
+    <title>个人简历</title>
     <style>
 
     </style><!--页内的css-->
@@ -72,8 +72,7 @@
     </div>
 </div>
 <!--个人简历标题-->
-<div class="container-fluid">
-    <h3>建设中。。。</h3>
+<div class="container-fluid text-primary">
     <h1 class="text-center">个人简历</h1>
     <h2 class="text-right">郁挚一</h2>
     <h4 class="text-right">求职意向：运维开发工程师</h4>
@@ -206,12 +205,12 @@
             </h2>
         </div>
         <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
+            <div class="panel-body ">
                 <table class="table table-striped">
                     <!--天天果园-->
                     <tr>
                         <td class="pull-right"><img src="images/logo/fruitday.png" class="img-responsive" alt="天天果园logo"></td>
-                        <td><strong> 上海美滋数字科技有限公司（天天果园）（2016/7 - 2017/7 1年）</strong>
+                        <td class=""><strong> 上海美滋数字科技有限公司（天天果园）（2016/7 - 2017/7 1年）</strong>
                             <br>
                             <a href="http://www.fruitday.com">www.fruitday.com</a></td>
                     </tr>
@@ -245,9 +244,9 @@
                         <td class="text-right">项目经验：</td>
                         <td>
                             <ul>
-                                <li><i class="icon-ok-sign"></i>线上AWS整合项目（为节省成本，整合非关键应用数据库）。</li>
-                                <li><i class="icon-ok-sign"></i>办公区环境整合项目（将开发环境和测试环境从IDC搬迁回办公区，并进行了大量应用的整合）。</li>
-                                <li><i class="icon-ok-sign"></i>城市超市IT环境搬迁测试项目（测试了城超环境迁移云平台的可行性，该项目测试了阿里云、京东云、Azure等云平台）。</li>
+                                <li><i class="icon-ok-sign"></i>线上AWS主生产库优化项目：主订单库数据量日益增大，导致查询效率缓慢，且大多数为历史订单，查询几率低。因此该项目对主订单库历史数据进行归档至历史数据库。为不影响业务正常开展，每晚自动启动归档程序白天再停止。项目中遇到了归档速度慢的现象，最后发现问题在于数据类型不同导致隐式转换，以及有些查询字段没有索引。经与开发讨论后消除了隐式转换，并分析业务低谷期添加索引之后归档速度显著加快。最后主库CPU使用率从80% 下降至 40%、IOPS下降至原来的八分之一、其他指标均有下降。取得较为明显的效果。</li>
+                                <li><i class="icon-ok-sign"></i>线上AWS整合项目：公司前期由于项目赶进度，在云上为每套应用服务器、数据库部署了独立的服务器或集群。经过梳理，有不少应用资源使用率极低，且为非关键应用，造成大量资源和预算浪费。该项目中整合了非关键应用及其数据库服务器到两台配置较高的集群和RDS数据库集群。该项目有效的提高了资源利用率，节省了费用。且经过一段时间各系统平稳运行</li>
+                                <li><i class="icon-ok-sign"></i>办公区环境整合项目：由于生产环境迁移到AWS云后，原生产环境设备改为开发和测试环境。但仍托管在IDC中，办公区开发和测试连接IDC通过公网VPN，速度较慢。IDC中的机柜托管费用也较高。通过扩充办公区机房，按批次迁移将服务器搬回办公区。经调整后架构更趋合理。</li>
                             </ul>
                         </td>
                     </tr>
@@ -293,7 +292,7 @@
                         <td class="text-right">项目经验：</td>
                         <td>
                             <ul>
-                                <li><i class="icon-ok-sign"></i>IDC系统集成项目（公司线上系统二期在IDC部署，从硬件层面的服务器、存储，到虚拟化层，系统层的部署，以及应用和数据库的部署，域名解析。并从一期系统向二期切换）。</li>
+                                <li><i class="icon-ok-sign"></i>IDC系统集成项目：随着公司业务发展，原架构已不能满足业务需要。公司决定改造架构，该项目实施了从硬件层面的服务器、SAN存储，到虚拟化集群，系统层的部署，以及应用和数据库的部署，域名解析。并从一期系统向二期切换。</li>
                                 <li><i class="icon-ok-sign"></i>青浦工厂系统集成项目。</li>
                                 <li><i class="icon-ok-sign"></i>办公区机房搬迁项目。</li>
                                 <li><i class="icon-ok-sign"></i>IDC迁移阿里云项目（该项目将二期的系统迁移至阿里云环境，应用服务器迁移至ECS，数据库服务器迁移至RDS，静态文件迁移至OSS）</li>
@@ -456,6 +455,7 @@
                     </tr>
                     <tr><td></td><td></td></tr>
                 </table>
+
             </div>
         </div>
     </div>

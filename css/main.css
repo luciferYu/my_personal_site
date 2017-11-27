@@ -7,6 +7,12 @@
     height: auto;
 
 }
-.jumbotron #jh1,#jp {
+
+.jumbotron div{
+    margin-left: 8%;
+}
+
+.jumbotron div #jh1,#jp {
     color: #fff;
 }
+
